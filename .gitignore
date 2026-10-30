@@ -1,0 +1,8 @@
+# API 키가 들어 있는 파일은 GitHub에 올리지 않습니다
+.env.local
+.env*.local
+
+# 설치·빌드 결과
+node_modules/
+.next/
+.next-*/

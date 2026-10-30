@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","tertiary-fixed-dim":"#bcc7de","surface-tint":"#0053db","inverse-primary":"#b4c5ff","secondary-fixed-dim":"#bec6e0","surface-bright":"#f8f9ff","surface-container-highest":"#d3e4fe","on-tertiary-fixed-variant":"#3c475a","error":"#ba1a1a","on-error":"#ffffff","tertiary":"#4b566a","surface-container-low":"#eff4ff","inverse-surface":"#213145","outline-variant":"#c3c6d7","primary-fixed":"#dbe1ff","secondary-fixed":"#dae2fd","surface-dim":"#cbdbf5","surface-container-high":"#dce9ff","on-primary-fixed":"#00174b","surface-container-lowest":"#ffffff","on-tertiary-container":"#ecf1ff","on-secondary-fixed":"#131b2e","on-surface-variant":"#434655","primary-container":"#2563eb","primary":"#004ac6","on-secondary":"#ffffff","on-error-container":"#93000a","outline":"#737686","on-secondary-fixed-variant":"#3f465c","secondary-container":"#dae2fd","surface":"#f8f9ff","tertiary-fixed":"#d8e3fb","surface-variant":"#d3e4fe","on-tertiary-fixed":"#111c2d","background":"#f8f9ff","on-secondary-container":"#5c647a","on-primary-fixed-variant":"#003ea8","on-surface":"#0b1c30","on-background":"#0b1c30","error-container":"#ffdad6","inverse-on-surface":"#eaf1ff","surface-container":"#e5eeff","tertiary-container":"#636e83","secondary":"#565e74","primary-fixed-dim":"#b4c5ff","on-primary":"#ffffff","on-primary-container":"#eeefff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","space-sm":"0.5rem","space-lg":"1rem",margin:"1.5rem",gutter:"1rem"},fontFamily:{"headline-md":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"display-lg":["Inter"],"label-md":["Inter"],"title-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"numeric-kpi":["Inter"],"numeric-table":["Inter"]},fontSize:{"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"display-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"title-md":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"numeric-kpi":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"700"}],"numeric-table":["13px",{lineHeight:"18px",fontWeight:"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-md"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm"><span class="material-symbols-outlined text-headline-sm">domain</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-tight">현장별 공정·기성 관리 시스템</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">건설사업본부 공무기획팀</span></div></div><div class="h-6 w-[1px] bg-outline-variant/40 hidden xl:block"></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-title-md text-title-md rounded"><a class="px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard-summary" href="#">현황 요약</a><a class="px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="site-comparison-table" href="#">현장별 비교표</a><a class="px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="data-import" href="#">자료 가져오기</a><a class="px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ai-assistant" href="#">AI에게 묻기</a></nav></div><div class="flex items-center gap-space-lg"><div class="hidden lg:flex items-center gap-space-xs px-space-md py-1 rounded bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-md text-label-md font-semibold text-on-surface">2026년 09월 정기점검 데이터 기준</span></div><button class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-sm">download</span><span>CSV 내보내기</span></button><div class="h-6 w-[1px] bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">김과장</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">본사 공무팀</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WVoP3fwkounKF_MOaBJFLXu8tpUoLoY4hJxmFte8ftVqglMbeW-P9COhnGTGTYLYw_6MFWbAGj2c9krzm_d7T4He7quGzUKMwysMBoWYLvhR9-YidqEN9hHM8YYaoDcFJ_P_mv6h9hwwVlgWXHPMzZEtegsV58kXEJhkOeBYmq-VL86ciJvfL-YftgN_5j2QAFLSZgMEJtCVKFzM8gSfXydmcmKwQ5_LwR-sT1kZsDRA"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<div class="w-full px-space-xl py-space-lg flex flex-col gap-space-lg max-w-[1720px] mx-auto">
+<!-- Top Status & Safety Assurance Banner -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-headline-sm">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">전체 공정·기성 데이터 검증 및 교체</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">lock_reset</span> 자동 롤백 보호 활성
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            CSV 또는 JSON을 검사하고 미리 보여준 뒤 전체를 안전하게 교체합니다. 오류나 취소 시 현재 데이터(144행)를 그대로 유지합니다.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center shrink-0">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">현재 데이터베이스 스냅샷</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">2026.09월 정기점검 (144개 현장)</span>
+</div>
+<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+</div>
+</div>
+<!-- Main Workspace Bento Grid (Upload Left, Status Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: File Dropzone & Specs (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- File Upload Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">cloud_upload</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">파일 일괄 업로드</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">권장 규격: UTF-8 (.csv, .json)</span>
+</div>
+<!-- Interactive Dropzone -->
+<div class="group relative flex flex-col items-center justify-center p-space-xl rounded-xl bg-surface hover:bg-surface-container-low transition-all cursor-pointer text-center" id="dropzone">
+<input accept=".csv, .json" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full z-10" id="fileInput" type="file"/>
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform shadow-sm mb-space-sm">
+<span class="material-symbols-outlined text-display-lg" style="font-variation-settings: 'FILL' 1;">upload_file</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                CSV 또는 JSON 파일을 여기에 끌어다 놓으세요
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                또는 <span class="text-primary font-semibold underline decoration-primary underline-offset-4">내 컴퓨터에서 파일 선택</span>
+</span>
+</div>
+<div class="mt-space-md flex flex-wrap items-center justify-center gap-space-xs text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm">최대 권장 144행</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm">필수 15개 컬럼 매칭</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm">최대 25MB</span>
+</div>
+</div>
+<!-- Staged File Status Badge Box -->
+<div class="rounded-lg bg-surface-container-low p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-headline-sm">
+<span class="material-symbols-outlined text-title-md">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">2026_09_monthly_progress.csv</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">428 KB · 파싱 및 구문 분석 완료</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold shrink-0">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span> 준비됨
+            </span>
+</div>
+<!-- Schema Rules Summary Box -->
+<div class="bg-surface rounded-lg p-space-md flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">rule</span> 인코딩 및 데이터 제약 사항
+            </span>
+<ul class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<span>현장코드 기준 중복 키(Duplicate Key)가 존재하지 않아야 합니다.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<span>금액 단위는 '원(KRW)' 단위 정수형, 공정률은 소수점 둘째 자리 백분율입니다.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<span>미입력 방지를 위해 모든 필수 15개 컬럼의 NULL 값을 사전 검출합니다.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- System Safety Guardrail Note -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-body-lg">shield</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface font-semibold">데이터 안전 보장 원칙 (Fail-Safe)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              본사 공정 원장 교체는 단일 트랜잭션으로 격리 실행됩니다. 업로드 처리 중 네트워크 끊김, 컬럼 타입 불일치, 또는 담당자 취소 발생 시 기존 등록된 2026년 09월(144행) 상태로 즉시 롤백 복구됩니다.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Verification Engine & Schema Checklist (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Validation Summary Bento Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">fact_check</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">데이터 정합성 및 스키마 검증 리포트</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-md text-label-md font-semibold">
+              검증 성공률 100% (15/15)
+            </span>
+</div>
+<!-- Comparison Counters (Current vs Uploaded) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="bg-surface rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">현재 등록 데이터</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-numeric-kpi text-numeric-kpi text-on-surface">144</span>
+<span class="font-label-md text-label-md text-on-surface-variant">행(구)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">2026-09-01 마감분</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-primary">검증 완료된 신규 행수</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-numeric-kpi text-numeric-kpi text-primary">144</span>
+<span class="font-label-md text-label-md text-primary">행(신)</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mt-1">
+<span class="material-symbols-outlined text-xs">done_all</span> 결측치 0건 · 오류 0건
+              </div>
+</div>
+<div class="bg-surface rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">필수 컬럼 일치도</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-numeric-kpi text-numeric-kpi text-on-surface">15 / 15</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary mt-1 font-semibold">전체 스키마 규격 통과</span>
+</div>
+</div>
+<!-- 15 Required Columns Verification Matrix -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md font-semibold text-on-surface">15개 필수 컬럼 유효성 검사 내역</span>
+<span class="font-label-sm text-label-sm">통과: 15 / 경고: 0 / 결측: 0</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs">
+<!-- Item 1 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">1. 현장코드 (Site Code)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">2. 현장명 (Site Name)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">3. 기준월 (Base Month)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">4. 계약금액 (Total Value)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 5 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">5. 누적기성액 (Earned Val)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 6 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">6. 계획공정률 (Plan Rate)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 7 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">7. 실제공정률 (Actual Rate)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 8 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">8. 공정차이 (Variance)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 9 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">9. 주요공종 (Main Scope)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 10 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">10. 현장소장 (PM Name)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 11 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">11. 준공예정일 (Finish Date)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 12 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">12. 안전등급 (Safety Rank)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 13 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">13. 월별상황 (Month Status)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 14 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">14. 대응대책 (Action Plan)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Item 15 -->
+<div class="bg-surface p-space-sm rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface truncate">15. 관리상태 (Health Grade)</span>
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Preview Section (Top 5 Rows with Schema Verification Indicator) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">table_chart</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">데이터 미리보기 (상위 5건 추출 검토)</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm">오류 없음 (Error 0)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>전체 144행 중 상위 5행 표시</span>
+<span class="mx-1">•</span>
+<span class="text-primary font-semibold">수치 및 날짜 파싱 완료</span>
+</div>
+</div>
+<!-- Dense Table Container -->
+<div class="w-full overflow-x-auto rounded-lg">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md select-none">
+<th class="py-space-sm px-space-md text-center w-12">No</th>
+<th class="py-space-sm px-space-md">현장코드</th>
+<th class="py-space-sm px-space-md">현장명</th>
+<th class="py-space-sm px-space-md text-center">기준월</th>
+<th class="py-space-sm px-space-md text-right">계약금액(억원)</th>
+<th class="py-space-sm px-space-md text-right">누적기성(억원)</th>
+<th class="py-space-sm px-space-md text-right">계획공정률</th>
+<th class="py-space-sm px-space-md text-right">실제공정률</th>
+<th class="py-space-sm px-space-md text-center">차이</th>
+<th class="py-space-sm px-space-md">주요공종</th>
+<th class="py-space-sm px-space-md">월별상황 요약</th>
+<th class="py-space-sm px-space-md">대응대책</th>
+<th class="py-space-sm px-space-md text-center">관리등급</th>
+</tr>
+</thead>
+<tbody class="text-on-surface font-numeric-table text-numeric-table divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-space-sm px-space-md text-center font-label-sm text-label-sm text-on-surface-variant">01</td>
+<td class="py-space-sm px-space-md font-semibold text-primary">CN-2024-012</td>
+<td class="py-space-sm px-space-md font-body-sm text-body-sm font-semibold truncate max-w-[160px]">마곡 R&amp;D 복합캠퍼스</td>
+<td class="py-space-sm px-space-md text-center">2026-09</td>
+<td class="py-space-sm px-space-md text-right">1,420.0</td>
+<td class="py-space-sm px-space-md text-right">1,241.0</td>
+<td class="py-space-sm px-space-md text-right">85.4%</td>
+<td class="py-space-sm px-space-md text-right font-semibold">87.4%</td>
+<td class="py-space-sm px-space-md text-center text-primary font-semibold">+2.0%p</td>
+<td class="py-space-sm px-space-md truncate max-w-[100px] font-body-sm text-body-sm">골조 및 마감</td>
+<td class="py-space-sm px-space-md truncate max-w-[180px] font-body-sm text-body-sm">커튼월 조기 발주로 공기 3주 단축</td>
+<td class="py-space-sm px-space-md truncate max-w-[160px] font-body-sm text-body-sm">내부 설비팀 추가 투입</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">정상</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface transition-colors bg-surface-container-low/40">
+<td class="py-space-sm px-space-md text-center font-label-sm text-label-sm text-on-surface-variant">02</td>
+<td class="py-space-sm px-space-md font-semibold text-primary">CN-2023-088</td>
+<td class="py-space-sm px-space-md font-body-sm text-body-sm font-semibold truncate max-w-[160px]">세종 5-1생활권 스마트시티</td>
+<td class="py-space-sm px-space-md text-center">2026-09</td>
+<td class="py-space-sm px-space-md text-right">2,850.0</td>
+<td class="py-space-sm px-space-md text-right">1,824.0</td>
+<td class="py-space-sm px-space-md text-right">67.0%</td>
+<td class="py-space-sm px-space-md text-right font-semibold">64.0%</td>
+<td class="py-space-sm px-space-md text-center text-secondary font-semibold">-3.0%p</td>
+<td class="py-space-sm px-space-md truncate max-w-[100px] font-body-sm text-body-sm">지하 토목 및 관로</td>
+<td class="py-space-sm px-space-md truncate max-w-[180px] font-body-sm text-body-sm">하절기 집중호우로 인한 토공사 지연</td>
+<td class="py-space-sm px-space-md truncate max-w-[160px] font-body-sm text-body-sm">야간 굴착 및 장비 2교대 전환</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-on-secondary-container font-label-sm text-label-sm font-semibold">주의</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-space-sm px-space-md text-center font-label-sm text-label-sm text-on-surface-variant">03</td>
+<td class="py-space-sm px-space-md font-semibold text-primary">CN-2024-003</td>
+<td class="py-space-sm px-space-md font-body-sm text-body-sm font-semibold truncate max-w-[160px]">부산 신항 배후물류단지 B2</td>
+<td class="py-space-sm px-space-md text-center">2026-09</td>
+<td class="py-space-sm px-space-md text-right">980.0</td>
+<td class="py-space-sm px-space-md text-right">411.6</td>
+<td class="py-space-sm px-space-md text-right">42.0%</td>
+<td class="py-space-sm px-space-md text-right font-semibold">42.2%</td>
+<td class="py-space-sm px-space-md text-center text-primary font-semibold">+0.2%p</td>
+<td class="py-space-sm px-space-md truncate max-w-[100px] font-body-sm text-body-sm">PC구조물 거치</td>
+<td class="py-space-sm px-space-md truncate max-w-[180px] font-body-sm text-body-sm">철골 트러스 제작 및 반입 순항</td>
+<td class="py-space-sm px-space-md truncate max-w-[160px] font-body-sm text-body-sm">지붕 방수 시공사 사전 미팅</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">정상</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface transition-colors bg-surface-container-low/40">
+<td class="py-space-sm px-space-md text-center font-label-sm text-label-sm text-on-surface-variant">04</td>
+<td class="py-space-sm px-space-md font-semibold text-primary">CN-2025-019</td>
+<td class="py-space-sm px-space-md font-body-sm text-body-sm font-semibold truncate max-w-[160px]">동탄 인동선 복선전철 3공구</td>
+<td class="py-space-sm px-space-md text-center">2026-09</td>
+<td class="py-space-sm px-space-md text-right">3,120.0</td>
+<td class="py-space-sm px-space-md text-right">780.0</td>
+<td class="py-space-sm px-space-md text-right">31.0%</td>
+<td class="py-space-sm px-space-md text-right font-semibold">25.0%</td>
+<td class="py-space-sm px-space-md text-center text-error font-semibold">-6.0%p</td>
+<td class="py-space-sm px-space-md truncate max-w-[100px] font-body-sm text-body-sm">터널 TBM 굴착</td>
+<td class="py-space-sm px-space-md truncate max-w-[180px] font-body-sm text-body-sm">파쇄대 구간 출수로 TBM 가동 일시정지</td>
+<td class="py-space-sm px-space-md truncate max-w-[160px] font-body-sm text-body-sm">차수 그라우팅 긴급 주입 시행</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">점검요망</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="py-space-sm px-space-md text-center font-label-sm text-label-sm text-on-surface-variant">05</td>
+<td class="py-space-sm px-space-md font-semibold text-primary">CN-2024-061</td>
+<td class="py-space-sm px-space-md font-body-sm text-body-sm font-semibold truncate max-w-[160px]">인천 청라 하이테크 바이오밸리</td>
+<td class="py-space-sm px-space-md text-center">2026-09</td>
+<td class="py-space-sm px-space-md text-right">1,650.0</td>
+<td class="py-space-sm px-space-md text-right">1,501.5</td>
+<td class="py-space-sm px-space-md text-right">91.0%</td>
+<td class="py-space-sm px-space-md text-right font-semibold">91.0%</td>
+<td class="py-space-sm px-space-md text-center text-on-surface-variant font-semibold">0.0%p</td>
+<td class="py-space-sm px-space-md truncate max-w-[100px] font-body-sm text-body-sm">클린룸 시운전</td>
+<td class="py-space-sm px-space-md truncate max-w-[180px] font-body-sm text-body-sm">HVAC 차압 테스트 완료 및 인허가 준비</td>
+<td class="py-space-sm px-space-md truncate max-w-[160px] font-body-sm text-body-sm">준공 전 종합 시운전 계획 수립</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">정상</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Final Sticky/Bottom Action Control Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md mt-space-xs">
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-headline-sm">published_with_changes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">원장 데이터베이스 최종 반영 준비 완료</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">교체 적용 버튼 클릭 시 현재 144행이 새 버전으로 덮어쓰기됩니다.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full md:w-auto justify-end">
+<button class="px-space-lg py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md transition-colors flex items-center gap-1.5" id="btnCancel" type="button">
+<span class="material-symbols-outlined text-sm">close</span>
+<span>취소 (현재 데이터 유지)</span>
+</button>
+<button class="px-space-xl py-space-sm bg-primary hover:bg-surface-tint text-on-primary rounded font-label-md text-label-md transition-all shadow-sm flex items-center gap-1.5 active:scale-95" id="btnApply" type="button">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cloud_sync</span>
+<span>최종 데이터 교체 적용 (144행 덮어쓰기)</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    // Drag and drop interactive visual cues
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('fileInput');
+
+    if (dropzone && fileInput) {
+      ['dragenter', 'dragover'].forEach(eventName => {
+        dropzone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropzone.classList.add('bg-surface-container');
+        }, false);
+      });
+
+      ['dragleave', 'drop'].forEach(eventName => {
+        dropzone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropzone.classList.remove('bg-surface-container');
+        }, false);
+      });
+
+      fileInput.addEventListener('change', () => {
+        if (fileInput.files.length > 0) {
+          const fileName = fileInput.files[0].name;
+          alert(`선택된 파일: ${fileName}\n15개 필수 컬럼 유효성 검증을 마쳤습니다.`);
+        }
+      });
+    }
+
+    const btnCancel = document.getElementById('btnCancel');
+    if (btnCancel) {
+      btnCancel.addEventListener('click', () => {
+        alert('가져오기 작업을 취소했습니다. 기존 2026년 09월 144행 데이터가 온전히 유지됩니다.');
+      });
+    }
+
+    const btnApply = document.getElementById('btnApply');
+    if (btnApply) {
+      btnApply.addEventListener('click', () => {
+        const confirmed = confirm('144개 현장의 기존 데이터를 업로드 파일로 전체 교체하시겠습니까?\n이 작업은 감사 로그에 기록되며 자동 롤백 백업본이 생성됩니다.');
+        if (confirmed) {
+          btnApply.disabled = true;
+          btnApply.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">refresh</span><span>적용 및 원장 인덱싱 중...</span>';
+          setTimeout(() => {
+            alert('데이터 교체가 성공적으로 완료되었습니다! 현장별 비교표 화면으로 자동 이동합니다.');
+            btnApply.disabled = false;
+            btnApply.innerHTML = '<span class="material-symbols-outlined text-sm">cloud_sync</span><span>최종 데이터 교체 적용 (144행 덮어쓰기)</span>';
+          }, 800);
+        }
+      });
+    }
+  </script>
+</div></main></body></html>
